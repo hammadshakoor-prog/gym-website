@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: blue;
+           padding: 20px;
+           box-shadow: 10px 10px 10px 10px green;
+        }
+        .box{
+            flex:1;
+            background-color: red;
+            margin: 10px;
+            font-size: "100px";
+        }
+        @media only screen and (max-width: 600px) {
+                   
+            .container{
+                display: block;
+                background-color: red;
+                padding: 20px;
+                box-shadow: 5px 5px 5px 5px gray;
+               
+            }
+            .box{
+                background-color: blue;
+                color: white;
+            }
+            .p1{
+                font-size: "200px";
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><p class="p1">1</p></div>
+        <div class="box"><p class="p1">2</p></div>
+        <div class="box"><p class="p1">3</p></div>
+    </div>
+</body>
+</html>
